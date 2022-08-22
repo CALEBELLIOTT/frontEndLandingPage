@@ -46,7 +46,7 @@
 
 
     <div class="row">
-      <div class="col-12 bg-dark height-100">
+      <div class="col-12 bg-dark height-100 overflow-none">
         <div class=" section-div position-relative d-flex flex-column justify-content-evenly h-100 pt-md-0 pt-5"
           id="aboutSection">
           <div class="right-side-text reveal mt-5 position-relative d-flex flex-column">
@@ -192,7 +192,6 @@ export default {
   position: absolute;
   top: 10vh;
   left: -10vw;
-  right: 0;
   animation: from-right 1500ms ease-out 300ms;
   filter: grayscale(.15);
   transform: translateY(-130%);
@@ -366,6 +365,10 @@ export default {
 
 .h-90 {
   min-height: 90vh;
+}
+
+.overflow-none {
+  max-width: 100vw;
 }
 
 
